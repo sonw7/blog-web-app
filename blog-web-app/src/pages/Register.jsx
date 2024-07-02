@@ -15,6 +15,7 @@ function Register() {
   const navigate = useNavigate();
 
   const handleSubmit = async (values) => {
+    console.log(JSON.stringify(values))
     const response = await fetch('/api/auth/register', {
       method: 'POST',
       headers: {
